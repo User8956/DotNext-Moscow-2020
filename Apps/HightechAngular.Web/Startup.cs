@@ -52,6 +52,8 @@ namespace HightechAngular.Web
             services.AddDistributedMemoryCache();
         }
 
+
+        //Q1 Why do we need async initilizer?
         private static void ConfigureDbContext(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(ApplicationContextFactory.SetOptions);
@@ -61,6 +63,7 @@ namespace HightechAngular.Web
         private static void ConfigureWeb(IServiceCollection services)
         {
             services.AddRazorPages();
+            //what does it actually do?
             services
                 .AddControllersWithViews(options => options.Filters.Add(typeof(ExceptionsFilterAttribute)))
                 .AddJsonOptions(options => { options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()); })
@@ -68,6 +71,7 @@ namespace HightechAngular.Web
                     typeof(CatalogController).Assembly,
                     typeof(OrderController).Assembly);
 
+            //
             services.RegisterShop();
             services.RegisterAdmin();
             services.RegisterOrder();
