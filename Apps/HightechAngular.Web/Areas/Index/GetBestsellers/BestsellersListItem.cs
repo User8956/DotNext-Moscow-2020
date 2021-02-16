@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Linq.Expressions;
 using Force.Ddd;
+using HightechAngular.Areas.Index.GetSales;
 using HightechAngular.Orders.Entities;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace HightechAngular.Areas.Admin.GetAllOrders
 {
-    public class GetAllOrdersHandler : ICommandHandler<GetAllOrdersQuery, IQueryable<OrderListItem>>
+    public class GetAllOrdersHandler : IQueryHandler<GetAllOrdersQuery, IEnumerable<OrderListItem>>
     {
 
         private readonly IQueryable<Order> _orders;
@@ -20,8 +20,8 @@ namespace HightechAngular.Areas.Admin.GetAllOrders
             _orders = orders;
         }
 
-        public IQueryable<OrderListItem> Handle(GetAllOrdersQuery input) =>
-            (IQueryable<OrderListItem>)_orders
+        public IEnumerable<OrderListItem> Handle(GetAllOrdersQuery input) =>
+            (IEnumerable<OrderListItem>)_orders
               .Select(AllOrdersItem.Map);
     }
 }

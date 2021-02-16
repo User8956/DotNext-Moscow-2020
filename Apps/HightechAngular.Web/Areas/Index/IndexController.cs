@@ -1,8 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using Force.Cqrs;
+using HightechAngular.Areas.Index.GetArrivals;
+using HightechAngular.Areas.Index.GetBestsellers;
+using HightechAngular.Areas.Index.GetSales;
 using HightechAngular.Orders.Entities;
-using HightechAngular.Web.Areas.Index.GetSales;
 using Infrastructure.AspNetCore;
 using Mapster;
 using Microsoft.AspNetCore.Http;

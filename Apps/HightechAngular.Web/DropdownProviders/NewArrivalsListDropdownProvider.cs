@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using HightechAngular.Areas.Index.GetArrivals;
 using Infrastructure.SwaggerSchema.Dropdowns;
 using Infrastructure.SwaggerSchema.Dropdowns.Providers;
 

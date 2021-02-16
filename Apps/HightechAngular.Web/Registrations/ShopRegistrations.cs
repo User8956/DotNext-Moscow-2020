@@ -1,3 +1,7 @@
+using HightechAngular.Areas.Index.GetArrivals;
+using HightechAngular.Areas.Index.GetBestsellers;
+using HightechAngular.Areas.Index.GetSales;
+using HightechAngular.Areas.Shared;
 using HightechAngular.Orders.Entities;
 using HightechAngular.Orders.Services;
 using HightechAngular.Shop.Features.Cart;

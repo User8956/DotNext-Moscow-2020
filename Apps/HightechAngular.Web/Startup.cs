@@ -1,6 +1,7 @@
 using System.Text.Json.Serialization;
 using HightechAngular.Admin;
 using HightechAngular.Admin.Features.OrderManagement;
+using HightechAngular.Areas.Catalog;
 using HightechAngular.Data;
 using HightechAngular.Identity.Entities;
 using HightechAngular.Identity.Services;
@@ -44,16 +45,19 @@ namespace HightechAngular.Web
             ConfigureInfrastructure(services);
         }
 
+
+        private static readonly string defaultProviderStrInitial = "HightechAngular";
+        private static readonly string defaultProviderStr = "HightechAngular.Areas";
+
         private static void ConfigureInfrastructure(IServiceCollection services)
         {
-            services.AddSingleton<ITypeProvider>(new DefaultTypeProvider(x => x.StartsWith("HightechAngular")));
+            services.AddSingleton<ITypeProvider>(new DefaultTypeProvider(x => x.StartsWith(defaultProviderStr)));
             services.AddScoped<IDropdownProvider, DefaultDropdownProvider>();
             services.AddScoped<DbContext, ApplicationDbContext>();
             services.AddDistributedMemoryCache();
         }
 
 
-        //Q1 Why do we need async initilizer?
         private static void ConfigureDbContext(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(ApplicationContextFactory.SetOptions);
@@ -63,7 +67,6 @@ namespace HightechAngular.Web
         private static void ConfigureWeb(IServiceCollection services)
         {
             services.AddRazorPages();
-            //what does it actually do?
             services
                 .AddControllersWithViews(options => options.Filters.Add(typeof(ExceptionsFilterAttribute)))
                 .AddJsonOptions(options => { options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()); })

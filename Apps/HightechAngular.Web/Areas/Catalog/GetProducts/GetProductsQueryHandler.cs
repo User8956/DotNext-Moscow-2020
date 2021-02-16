@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HightechAngular.Areas.Catalog.GetProducts
 {
-    public class GetProductsQueryHandler : IQueryHandler<GetProductsQuery, IQueryable<ProductListItem>>
+    public class GetProductsQueryHandler : IQueryHandler<GetProductsQuery, IEnumerable<ProductListItem>>
     {
         private readonly IQueryable<Product> _products;
 
@@ -22,7 +22,7 @@ namespace HightechAngular.Areas.Catalog.GetProducts
             _products = products;
         }
 
-        public IQueryable<ProductListItem> Handle(GetProductsQuery input)
+        public IEnumerable<ProductListItem> Handle(GetProductsQuery input)
         {
             var products = _products
                       .Where(x => x.Category.Id == input.CategoryId)
