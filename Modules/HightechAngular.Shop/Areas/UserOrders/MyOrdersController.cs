@@ -36,7 +36,7 @@ namespace HightechAngular.Areas.UserOrders
 
 
         [HttpPut("Complete")]
-        public async Task<IActionResult> Complete([FromBody] CompleteOrderAdminCommand command) => 
+        public async Task<IActionResult> Complete([FromBody] CompleteOrderCommand command) => 
             await this.ProcessAsync(command);
 
         [HttpPut("PayOrder")]

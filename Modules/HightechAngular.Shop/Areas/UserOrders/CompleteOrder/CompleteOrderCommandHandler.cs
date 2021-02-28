@@ -1,18 +1,18 @@
 ﻿using Force.Cqrs;
-using HightechAngular.Admin.Features.OrderManagement;
 using HightechAngular.Orders.Entities;
+using HightechAngular.Shop.Features.MyOrders;
 using Infrastructure.Cqrs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace HightechAngular.Areas.Admin.CompleteOrder
+namespace HightechAngular.Areas.UserOrders.CompleteOrder
 {
     public class CompleteOrderCommandHandler : ICommandHandler<CompleteOrderCommand, Task<HandlerResult<OrderStatus>>>
     {
-        private readonly IQueryable<Order> _orders;
 
+        private readonly IQueryable<Order> _orders;
         public CompleteOrderCommandHandler(IQueryable<Order> orders)
         {
             _orders = orders;

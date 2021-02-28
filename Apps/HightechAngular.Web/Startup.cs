@@ -46,12 +46,9 @@ namespace HightechAngular.Web
         }
 
 
-        private static readonly string defaultProviderStrInitial = "HightechAngular";
-        private static readonly string defaultProviderStr = "HightechAngular.Areas";
-
         private static void ConfigureInfrastructure(IServiceCollection services)
         {
-            services.AddSingleton<ITypeProvider>(new DefaultTypeProvider(x => x.StartsWith(defaultProviderStr)));
+            services.AddSingleton<ITypeProvider>(new DefaultTypeProvider(x => x.StartsWith("HightechAngular")));
             services.AddScoped<IDropdownProvider, DefaultDropdownProvider>();
             services.AddScoped<DbContext, ApplicationDbContext>();
             services.AddDistributedMemoryCache();
@@ -74,7 +71,6 @@ namespace HightechAngular.Web
                     typeof(CatalogController).Assembly,
                     typeof(OrderController).Assembly);
 
-            //
             services.RegisterShop();
             services.RegisterAdmin();
             services.RegisterOrder();

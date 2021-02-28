@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace HightechAngular.Web.Entities
+namespace HightechAngular.Areas.Catalog.GetProducts
 {
     public class GetProductsQuery : FilterQuery<ProductListItem>
     {

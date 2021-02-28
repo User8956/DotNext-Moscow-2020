@@ -52,7 +52,7 @@ namespace HightechAngular.Admin.Features.OrderManagement
         public async Task<IActionResult> Shipped([FromBody] ShipOrderCommand command) => await this.ProcessAsync(command);
 
         [HttpPut("Complete")]
-        public async Task<IActionResult> Complete([FromBody] CompleteOrderCommand command) =>
+        public async Task<IActionResult> Complete([FromBody] CompleteOrderAdminCommand command) =>
             await this.ProcessAsync(command);
     }
 }

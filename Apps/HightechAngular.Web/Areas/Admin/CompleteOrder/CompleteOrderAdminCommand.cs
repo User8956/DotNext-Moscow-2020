@@ -2,7 +2,7 @@ using HightechAngular.Areas.Shared;
 
 namespace HightechAngular.Areas.Admin.CompleteOrder
 {
-    public class CompleteOrderCommand: ChangeOrderStateBase
+    public class CompleteOrderAdminCommand: ChangeOrderStateBase
     {
         public int   OrderId { get; set; }
     }
