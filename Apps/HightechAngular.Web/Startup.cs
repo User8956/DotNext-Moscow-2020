@@ -1,12 +1,12 @@
 using System.Text.Json.Serialization;
+using HightechAngular.Account;
 using HightechAngular.Admin;
-using HightechAngular.Admin.Features.OrderManagement;
-using HightechAngular.Areas.Catalog;
+using HightechAngular.Admin.Areas.OrderManagement;
+using HightechAngular.Core.Entities;
+using HightechAngular.Core.Services;
 using HightechAngular.Data;
-using HightechAngular.Identity.Entities;
-using HightechAngular.Identity.Services;
-using HightechAngular.Orders;
 using HightechAngular.Shop;
+using HightechAngular.Shop.Areas.Catalog;
 using HightechAngular.Shop.Features.Catalog;
 using HightechAngular.Web.Filters;
 using Infrastructure;

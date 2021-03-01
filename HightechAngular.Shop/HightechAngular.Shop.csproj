@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HightechAngular.Core\HightechAngular.Core.csproj" />
+    <ProjectReference Include="..\infrastructure\SwaggerSchema\SwaggerSchema.csproj" />
+  </ItemGroup>
+
+</Project>
