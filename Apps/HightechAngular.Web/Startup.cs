@@ -7,7 +7,6 @@ using HightechAngular.Core.Services;
 using HightechAngular.Data;
 using HightechAngular.Shop;
 using HightechAngular.Shop.Areas.Catalog;
-using HightechAngular.Shop.Features.Catalog;
 using HightechAngular.Web.Filters;
 using Infrastructure;
 using Infrastructure.Extensions;

@@ -1,5 +1,4 @@
 ﻿using Force.Cqrs;
-using HightechAngular.Admin.Features.OrderManagement;
 using HightechAngular.Core.Entities;
 using Infrastructure.Cqrs;
 using System;

@@ -2,7 +2,6 @@
 using Force.Extensions;
 using HightechAngular.Account.Areas.UserOrders.GetOrders;
 using HightechAngular.Admin.Areas.OrderManagement;
-using HightechAngular.Admin.Features.OrderManagement;
 using HightechAngular.Core.Entities;
 using System;
 using System.Collections.Generic;

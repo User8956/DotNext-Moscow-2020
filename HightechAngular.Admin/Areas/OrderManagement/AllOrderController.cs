@@ -5,12 +5,10 @@ using Force.Ccc;
 using Force.Extensions;
 using HightechAngular.Account.Areas.UserOrders.GetOrders;
 using HightechAngular.Admin.Areas.OrderManagement.CompleteOrder;
+using HightechAngular.Admin.Areas.OrderManagement.GetOrders.GetAllOrders;
 using HightechAngular.Admin.Areas.OrderManagement.PayOrder;
 using HightechAngular.Admin.Areas.OrderManagement.ShipOrder;
-using HightechAngular.Areas.Admin.CompleteOrder;
 using HightechAngular.Core.Entities;
-using HightechAngular.Shop.Features.Cart;
-using HightechAngular.Shop.Features.MyOrders;
 using Infrastructure.AspNetCore;
 using Infrastructure.Cqrs;
 using Mapster;
@@ -34,7 +32,7 @@ namespace HightechAngular.Admin.Areas.OrderManagement
 
         [HttpGet()]
         [ProducesResponseType(typeof(OrderListItem), StatusCodes.Status200OK)]
-        public IActionResult GetAll([FromQuery] GetAllOrders query) =>
+        public IActionResult GetAll([FromQuery] GetAllOrdersQuery query) =>
             _orders
                 .Select(AllOrdersItem.Map)
                 .PipeTo(Ok);
