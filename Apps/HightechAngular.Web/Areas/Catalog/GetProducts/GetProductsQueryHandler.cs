@@ -24,10 +24,10 @@ namespace HightechAngular.Areas.Catalog.GetProducts
 
         public IEnumerable<ProductListItem> Handle(GetProductsQuery input)
         {
-            var products = _products
-                      .Where(x => x.Category.Id == input.CategoryId)
-                      .ProjectToType<ProductListItem>();
-            return products.ProjectToType<ProductListItem>();
+            return _products
+            .Where(x => x.Category.Id == input.CategoryId)
+            .ProjectToType<ProductListItem>()
+            .ToList();
         }
     }
 }

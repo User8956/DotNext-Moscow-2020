@@ -19,10 +19,10 @@ namespace HightechAngular.Areas.Cart.AddItem
 
         public int Handle(AddToCartCommand input)
         {
-            var product = _products.First(x => x.Id == input.ProductID);
+            var product = _products.First(x => x.Id == input.ProductId);
             _cartStorage.Cart.AddProduct(product);
             _cartStorage.SaveChanges();
-            return input.ProductID;
+            return input.ProductId;
         }
     }
 }

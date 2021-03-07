@@ -22,7 +22,7 @@ namespace HightechAngular.Areas.Admin.GetOrders
 
         public IEnumerable<OrderListItem> Handle(GetMyOrdersQuery input)
         {
-            return (IQueryable<OrderListItem>)_orders
+            return (IEnumerable<OrderListItem>)_orders
                 .Select(AllOrdersItem.Map)
                 .ToList();
         }

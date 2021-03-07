@@ -23,7 +23,8 @@ namespace HightechAngular.Areas.Index.GetBestsellers
         {
             return _products
                 .Where(Product.Specs.IsBestseller)
-                .ProjectToType<BestsellersListItem>().ToList();
+                .ProjectToType<BestsellersListItem>()
+                .ToList();
         }
     }
 }

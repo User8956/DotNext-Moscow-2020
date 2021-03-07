@@ -20,7 +20,8 @@ namespace HightechAngular.Areas.Admin.GetAllOrders
 
         public IEnumerable<OrderListItem> Handle(GetAllOrdersQuery input) =>
               (IEnumerable<OrderListItem>)_orders
-              .Select(AllOrdersItem.Map);
+              .Select(AllOrdersItem.Map)
+              .ToList();
               
     }
 }

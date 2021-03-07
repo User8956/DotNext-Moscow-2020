@@ -21,7 +21,6 @@ namespace HightechAngular.Areas.Index
                 this.Process(query);
 
         [HttpGet("NewArrivals")]
-        /*[ProducesResponseType(typeof(NewArrivalsListItem), StatusCodes.Status200OK)]*/
         public ActionResult<IEnumerable<NewArrivalsListItem>> Get([FromQuery] GetNewArrivalsQuery query) =>
             this.Process(query);
 

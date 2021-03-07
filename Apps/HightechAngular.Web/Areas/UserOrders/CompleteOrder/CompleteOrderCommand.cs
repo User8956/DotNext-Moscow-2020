@@ -1,9 +1,9 @@
 using HightechAngular.Areas.Shared;
+using HightechAngular.Web.Areas.Shared;
 
 namespace HightechAngular.Areas.UserOrders.CompleteOrder
 {
-    public class CompleteOrderCommand : ChangeOrderStateBase
+    public class CompleteOrderCommand : HasOrderIdBase
     {
-        public int   OrderId { get; set; }
     }
 }
