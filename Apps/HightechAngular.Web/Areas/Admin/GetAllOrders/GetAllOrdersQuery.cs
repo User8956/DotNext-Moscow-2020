@@ -3,7 +3,7 @@ using HightechAngular.Areas.Shared;
 
 namespace HightechAngular.Areas.Admin.GetAllOrders
 {
-    public class GetAllOrdersQuery : FilterQuery<OrderListItem>
+    public class GetAllOrdersQuery : FilterQuery<AllOrdersItem>
     {
         
     }
