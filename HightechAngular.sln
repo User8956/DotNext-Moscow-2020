@@ -1,14 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{C83C800C-AF2F-4412-8579-D2EB13FEFF36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HightechAngular.Web", "Apps\HightechAngular.Web\HightechAngular.Web.csproj", "{E3752432-B129-4DD3-BA40-61A7C7A8BD06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HightechAngular.Web", "Apps\HightechAngular.Web\HightechAngular.Web.csproj", "{E3752432-B129-4DD3-BA40-61A7C7A8BD06}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{0FF4290E-5A6D-4EED-8C3C-134A5391E2E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "infrastructure\Infrastructure\Infrastructure.csproj", "{46DE6BAA-2B69-4E9D-82F6-9AB2EDC72693}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "infrastructure\Infrastructure\Infrastructure.csproj", "{46DE6BAA-2B69-4E9D-82F6-9AB2EDC72693}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwaggerSchema", "infrastructure\SwaggerSchema\SwaggerSchema.csproj", "{56A79706-420B-4AEF-8D9F-AD3443906F69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwaggerSchema", "infrastructure\SwaggerSchema\SwaggerSchema.csproj", "{56A79706-420B-4AEF-8D9F-AD3443906F69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{EF51E120-AC3D-4AF5-8BBB-592ECBBBF08E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HightechAngular.Core", "HightechAngular.Core\HightechAngular.Core.csproj", "{B8B32A71-AAD9-447D-8915-03BB37588C74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HightechAngular.Shop", "HightechAngular.Shop\HightechAngular.Shop.csproj", "{454A6631-5555-442A-82C4-FA1977149E23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HightechAngular.Admin", "HightechAngular.Admin\HightechAngular.Admin.csproj", "{64939EBE-F106-4034-B784-9EC06D176296}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HightechAngular.Account", "HightechAngular.Account\HightechAngular.Account.csproj", "{34E1164B-C3DD-4719-91E4-FB1B4ADDA2C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{E1738478-AAC0-46C2-BEE6-CF97DCC71524}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HightechAngular.Data", "HightechAngular.Data\HightechAngular.Data.csproj", "{A60EA240-A5AD-4A06-8847-09B61FB5A8C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +45,41 @@ Global
 		{56A79706-420B-4AEF-8D9F-AD3443906F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56A79706-420B-4AEF-8D9F-AD3443906F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56A79706-420B-4AEF-8D9F-AD3443906F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8B32A71-AAD9-447D-8915-03BB37588C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8B32A71-AAD9-447D-8915-03BB37588C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8B32A71-AAD9-447D-8915-03BB37588C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8B32A71-AAD9-447D-8915-03BB37588C74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{454A6631-5555-442A-82C4-FA1977149E23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{454A6631-5555-442A-82C4-FA1977149E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{454A6631-5555-442A-82C4-FA1977149E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{454A6631-5555-442A-82C4-FA1977149E23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64939EBE-F106-4034-B784-9EC06D176296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64939EBE-F106-4034-B784-9EC06D176296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64939EBE-F106-4034-B784-9EC06D176296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64939EBE-F106-4034-B784-9EC06D176296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34E1164B-C3DD-4719-91E4-FB1B4ADDA2C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E1164B-C3DD-4719-91E4-FB1B4ADDA2C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E1164B-C3DD-4719-91E4-FB1B4ADDA2C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E1164B-C3DD-4719-91E4-FB1B4ADDA2C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A60EA240-A5AD-4A06-8847-09B61FB5A8C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A60EA240-A5AD-4A06-8847-09B61FB5A8C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A60EA240-A5AD-4A06-8847-09B61FB5A8C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A60EA240-A5AD-4A06-8847-09B61FB5A8C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E3752432-B129-4DD3-BA40-61A7C7A8BD06} = {C83C800C-AF2F-4412-8579-D2EB13FEFF36}
 		{46DE6BAA-2B69-4E9D-82F6-9AB2EDC72693} = {0FF4290E-5A6D-4EED-8C3C-134A5391E2E2}
 		{56A79706-420B-4AEF-8D9F-AD3443906F69} = {0FF4290E-5A6D-4EED-8C3C-134A5391E2E2}
+		{B8B32A71-AAD9-447D-8915-03BB37588C74} = {EF51E120-AC3D-4AF5-8BBB-592ECBBBF08E}
+		{454A6631-5555-442A-82C4-FA1977149E23} = {EF51E120-AC3D-4AF5-8BBB-592ECBBBF08E}
+		{64939EBE-F106-4034-B784-9EC06D176296} = {EF51E120-AC3D-4AF5-8BBB-592ECBBBF08E}
+		{34E1164B-C3DD-4719-91E4-FB1B4ADDA2C3} = {EF51E120-AC3D-4AF5-8BBB-592ECBBBF08E}
+		{A60EA240-A5AD-4A06-8847-09B61FB5A8C9} = {E1738478-AAC0-46C2-BEE6-CF97DCC71524}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA3FB908-1432-4FFB-8D0D-F587AEE19308}
 	EndGlobalSection
 EndGlobal
