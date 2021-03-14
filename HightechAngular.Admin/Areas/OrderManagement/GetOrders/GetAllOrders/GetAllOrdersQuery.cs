@@ -3,7 +3,7 @@ using HightechAngular.Core.Entities;
 
 namespace HightechAngular.Admin.Areas.OrderManagement.GetOrders.GetAllOrders
 {
-    public class GetAllOrdersQuery : FilterQuery<OrderListItem>
+    public class GetAllOrdersQuery : FilterQuery<AllOrdersItem>
     {
 
     }

@@ -9,11 +9,11 @@ using System.Linq;
 using System.Threading.Tasks;
 namespace HightechAngular.Admin.Areas.OrderManagement.GetOrders
 {
-    public class GetMyOrdersQueryHandler : IQueryHandler<GetMyOrdersQuery, IEnumerable<OrderListItem>>
+    public class GetMyOrdersAdminQueryHandler : IQueryHandler<GetMyOrdersQuery, IEnumerable<OrderListItem>>
     {
         private readonly IQueryable<Order> _orders;
 
-        public GetMyOrdersQueryHandler(IQueryable<Order> orders)
+        public GetMyOrdersAdminQueryHandler(IQueryable<Order> orders)
         {
             _orders = orders;
         }

@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace HightechAngular.Shop.Areas.Index.GetBestsellers
 {
-    public class GetBesellersQueryHandler : IQueryHandler<GetBestsellersQuery, IEnumerable<BestsellersListItem>>
+    public class GetBestsellersQueryHandler : IQueryHandler<GetBestsellersQuery, IEnumerable<BestsellersListItem>>
     {
         private IQueryable<Product> _products;
 
-        public GetBesellersQueryHandler(IQueryable<Product> products)
+        public GetBestsellersQueryHandler(IQueryable<Product> products)
         {
             _products = products;
         }
