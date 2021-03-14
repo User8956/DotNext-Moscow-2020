@@ -1,6 +1,7 @@
 using System.Text.Json.Serialization;
 using HightechAngular.Admin;
 using HightechAngular.Admin.Features.OrderManagement;
+using HightechAngular.Areas.Catalog;
 using HightechAngular.Data;
 using HightechAngular.Identity.Entities;
 using HightechAngular.Identity.Services;
@@ -44,6 +45,7 @@ namespace HightechAngular.Web
             ConfigureInfrastructure(services);
         }
 
+
         private static void ConfigureInfrastructure(IServiceCollection services)
         {
             services.AddSingleton<ITypeProvider>(new DefaultTypeProvider(x => x.StartsWith("HightechAngular")));
@@ -51,6 +53,7 @@ namespace HightechAngular.Web
             services.AddScoped<DbContext, ApplicationDbContext>();
             services.AddDistributedMemoryCache();
         }
+
 
         private static void ConfigureDbContext(IServiceCollection services)
         {

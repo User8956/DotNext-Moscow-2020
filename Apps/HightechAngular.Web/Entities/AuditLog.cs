@@ -5,12 +5,13 @@ using Infrastructure.Ddd;
 
 namespace HightechAngular.Admin.Entities
 {
+   
     public class AuditLog: IntEntityBase
     {
         protected AuditLog()
         {
         }
-        
+    
         public AuditLog(string eventName, IIdentity identity, int? entityId = null)
         {
             if (identity == null) throw new ArgumentNullException(nameof(identity));
