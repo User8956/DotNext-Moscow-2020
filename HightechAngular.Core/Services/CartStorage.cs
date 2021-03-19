@@ -1,10 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using Force.Extensions;
+using HightechAngular.Core.Entities;
 using HightechAngular.Core.Services;
 using Microsoft.AspNetCore.Http;
 
-namespace HightechAngular.Core.Entities
+namespace HightechAngular.Core.Services
 {
     public class CartStorage : ICartStorage
     {

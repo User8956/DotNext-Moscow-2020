@@ -1,6 +1,7 @@
+using HightechAngular.Core.Entities;
 using System.Collections.Generic;
 
-namespace HightechAngular.Core.Entities
+namespace HightechAngular.Core.Services
 {
     public interface ICartStorage
     {
