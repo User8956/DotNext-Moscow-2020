@@ -10,18 +10,6 @@ namespace HightechAngular.Shop.Areas.Catalog.GetCategories
 {
     public class GetCategoriesQueryHandler : GetIntEnumerableQueryHandlerBase<GetCategoriesQuery, Category, CategoryListItem>
     {
-
-        /*   private readonly IQueryable<Category> _categories;
-
-           public GetCategoriesQueryHandler(IQueryable<Category> categories)
-           {
-               _categories = categories;
-           }
-
-           public IEnumerable<CategoryListItem> Handle(GetCategoriesQuery input)
-           {
-               return (IEnumerable<CategoryListItem>)_categories;
-           }*/
         public GetCategoriesQueryHandler(IQueryable<Category> queryable) : base(queryable)
         {
         }
