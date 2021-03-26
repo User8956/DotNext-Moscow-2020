@@ -64,7 +64,8 @@
       <Content Remove="Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\..\HightechAngular.Data\HightechAngular.Data.csproj" />
+      <ProjectReference Include="..\..\infrastructure\Infrastructure\Infrastructure.csproj" />
+      <ProjectReference Include="..\..\infrastructure\SwaggerSchema\SwaggerSchema.csproj" />
     </ItemGroup>
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
         <!-- Ensure Node.js is installed -->
